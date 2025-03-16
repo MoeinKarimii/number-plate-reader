@@ -13,11 +13,11 @@ LANGUAGES = {'English': 'en',
 
 
 # define constants
-project_dir = Path(__file__).resolve().parent.parent
+project_dir = Path(__file__).resolve().parent
 input_dir = project_dir / f'data'
-model_cfg_path = os.path.join('.', 'model', 'cfg', 'darknet-yolov3.cfg')
-model_weights_path = os.path.join('.', 'model', 'weights', 'model.weights')
-class_names_path = os.path.join('.', 'model', 'class.names')
+model_cfg_path = os.path.join('model', 'cfg', 'darknet-yolov3.cfg')
+model_weights_path = os.path.join('model', 'weights', 'model.weights')
+class_names_path = os.path.join('model', 'class.names')
 
 def logic(img_path, lang):
     # load class names
